@@ -9,3 +9,36 @@ body {
     border-radius: 0px;
     border: 0px;
 }
+#logo-image {
+    background: url("../images/restaurant-logo_large.png") no-repeat;
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+}
+.navbar-brand {
+    margin-top: 25px;
+}
+.navbar-brand h1 {
+    font-family: 'lora', serif;
+    color: #557c3e;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #222;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    line-height: 0.75;
+}
+.navbar-brand > p {
+    margin-top: 10px;
+    color: #000;
+    text-transform: uppercase;
+    font-size: 0.7em;
+}
+.navbar-brand > a:hover, .navbar-brand > a:focus {
+    text-decoration: none;
+}
+.navbar-brand > p > span {
+    vertical-align: middle;
+
+}
