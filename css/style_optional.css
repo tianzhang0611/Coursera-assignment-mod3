@@ -48,7 +48,7 @@ section#menuCategory {
     /* padding: 10px; */
     padding-top: 10px;
     padding-bottom: 10px;
-    background-color: #E6F4FF;
+    background-color: rgb(199, 199, 199);
 }
 .h2, section#menuCategory > h2 {
     margin-top: 0px;
@@ -61,21 +61,34 @@ h1 {
     font-size: 1.8em;
     font-family: 'Patrick Hand', cursive;
 }
-
-.optional-task {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    font-size: 1.1em;
-    font-weight: 800;
-    text-decoration: underline;
+.menu-tile {
+    background: #E6F4FF;
+    padding: 0 10px 10px;
+    /* box-sizing: border-box; */
+}
+.menu-tile p {
+    /* background: #8b8b8b; */
+    /* padding: 10px; */
+}
+.menu-tile h2 {
+    /* background: #8b8b8b; */
+    margin-bottom: 10px;
+    padding-top: 15px;
+    font-size: 1.3em;
+    font-family: 'Patrick Hand', cursive;
+}
+.menu-tile > a > span {
+    color: 002749;
+    font-size: 0.8em;
 }
 /* media query */
 
 /* table sm and above */
 @media (min-width: 768px) {
     #collapseMenu {
-    background: #0275d8;
+    background-color: #0275d8;
     }
+    
     .container-fluid {
         margin-left: 20px;
         margin-right: 20px;
@@ -88,6 +101,8 @@ h1 {
         width: 100%;
     }
 }
+
+
 /* mobile xs only  */
 @media (max-width: 767px) {
     .container-fluid {
