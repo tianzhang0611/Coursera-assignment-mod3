@@ -1,44 +1,91 @@
 body {
     font-size: 16px;
-    color: #fff;
-    background-color: #61122f;
-    font-family: 'Oxygen', sans-serif;
-}
-#header-nav {
-    background-color: #f6b319;
-    border-radius: 0px;
-    border: 0px;
-}
-#logo-image {
-    background: url("../images/restaurant-logo_large.png") no-repeat;
-    width: 150px;
-    height: 150px;
-    margin: 10px;
-}
-.navbar-brand {
-    margin-top: 25px;
-}
-.navbar-brand h1 {
-    font-family: 'lora', serif;
-    color: #557c3e;
-    font-size: 1.5em;
-    text-transform: uppercase;
-    font-weight: bold;
-    text-shadow: 1px 1px 1px #222;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    line-height: 0.75;
-}
-.navbar-brand > p {
-    margin-top: 10px;
     color: #000;
-    text-transform: uppercase;
-    font-size: 0.7em;
+    /* background-color: #61122f; */
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    box-sizing: border-box;
 }
-.navbar-brand > a:hover, .navbar-brand > a:focus {
-    text-decoration: none;
-}
-.navbar-brand > p > span {
-    vertical-align: middle;
 
+nav.navbar-static-top {
+    background: #0275d8;
+}
+.navbar-default a.navbar-brand {
+    color: white;
+}
+.navbar-default a.navbar-brand:hover {
+    color: #002749;
+}
+.navbar-default button.navbar-toggle:focus {
+    background-color: #002749;
+}
+.navbar-default .navbar-toggle span.icon-bar {
+    background: white;
+}
+.navbar-default button.navbar-toggle:hover {
+    background: #002749;
+    border: 1px solid #002749
+}
+#collapseMenu {
+    background: rgb(142, 253, 238);
+}
+#collapseMenu > ul {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+#collapseMenu > ul > li {
+    border-bottom: 1px solid white;
+    /* background: rgb(219, 219, 219); */
+}
+.navbar-default .navbar-nav > li > a {
+    color: black;
+}
+.navbar-default .navbar-nav > li > a:hover {
+    color: white;
+}
+section#menuCategory {
+    /* margin: 10px; */
+    /* padding: 10px; */
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgb(199, 199, 199);
+}
+.h2, section#menuCategory > h2 {
+    margin-top: 0px;
+    font-size: 1.2em;
+    font-family: 'Patrick Hand', cursive;
+}
+h1 {
+    margin-bottom: 50px;
+    margin-top: -10px;
+    font-size: 1.8em;
+    font-family: 'Patrick Hand', cursive;
+}
+
+/* media query */
+
+/* table sm and above */
+@media (min-width: 768px) {
+    #collapseMenu {
+    background: #0275d8;
+    }
+    .container-fluid {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .navbar-default > .container {
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: 20px;
+        margin-left: 20px;
+        width: 100%;
+    }
+}
+/* mobile xs only  */
+@media (max-width: 767px) {
+    .container-fluid {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
