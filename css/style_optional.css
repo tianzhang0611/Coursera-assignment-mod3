@@ -81,6 +81,13 @@ h1 {
     color: 002749;
     font-size: 0.8em;
 }
+.assignment-task {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 1.1em;
+    font-weight: 800;
+    text-decoration: underline;
+}
 /* media query */
 
 /* table sm and above */
